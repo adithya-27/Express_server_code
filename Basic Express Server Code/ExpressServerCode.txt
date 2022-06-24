@@ -1,0 +1,17 @@
+const express = require("express");
+const bP = require("body-parser");
+
+const app = express();
+
+//app.get...
+app.get("/", (req, res) => {
+    res.send("Hello, World!");
+});
+
+//port initialising
+var port = 8000;
+
+//app.listen...
+app.listen(port, () => {
+    console.log("Server started on port " + port);
+});
